@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
 :root {
   --success-color: #2ecc71;
   --error-color: #e74c3c;
 }
 
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
+  box-sizing: border-box;
   background-color: #f9fafb;
   font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
 }
 
 .container {
@@ -88,7 +93,6 @@ h2 {
   border-radius: 4px;
   color: #fff;
   display: block;
-  font-size: 16px;
   padding: 10px;
   margin-top: 20px;
   width: 100%;
